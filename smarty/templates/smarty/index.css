@@ -1,0 +1,7 @@
+.index-main-container {
+    display: flex;
+}
+
+.index-flex-block {
+    border: 1px solid black;
+}
