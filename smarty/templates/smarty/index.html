@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
+{% load filters %}
 
 {% load static %}
+
 {% block css_additional %}
     <link rel="stylesheet" href="{% static 'smarty/index.css' %}">
 {% endblock %}
@@ -10,7 +12,7 @@
 {% block content %}
     <div class="index-main-container">
         {% for app in apps %}
-            <div class="index-flex-block"><a href="">{{ app }}</a></div>
+            <div class="index-flex-block"><a href="">{{ apps_rus_dict|get_rus_name:app }}</a></div>
         {% endfor %}
     </div>
 {% endblock %}
