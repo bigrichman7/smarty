@@ -6,6 +6,10 @@ apps_rus_dict = {
     'movieman': 'Киноман',
 }
 
+apps_description = {
+    'movieman': 'Проверь свои знания актеров, ориентируясь по фотографии'
+}
+
 def index(request):
     all_apps = settings.INSTALLED_APPS
     user_apps = []
@@ -15,5 +19,6 @@ def index(request):
     data = {
         'apps': user_apps,
         'apps_rus_dict': apps_rus_dict,
+        'apps_description': apps_description,
     }
     return render(request, 'smarty/index.html', data)

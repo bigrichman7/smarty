@@ -13,7 +13,11 @@
 {% block content %}
     <div class="index-main-container">
         {% for app in apps %}
-            <div class="index-flex-block wp {{ app }}_wp"><a href="">{{ apps_rus_dict|get_rus_name:app }}</a></div>
+            <a href="{% url 'movieman-index' %}"><div class="index-flex-block wp {{ app }}_wp"><p class="index-module-name">{{ apps_rus_dict|get_value_from_dict:app }}</p><p class="index-module-description">{{ apps_description|get_value_from_dict:app }}</p></div></a>
         {% endfor %}
     </div>
+{% endblock %}
+
+{% block js_additional %}
+    <script src="{% static '/smarty/js/index.js' %}"></script>
 {% endblock %}

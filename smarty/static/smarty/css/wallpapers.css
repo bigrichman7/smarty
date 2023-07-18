@@ -1,7 +1,9 @@
 .wp {
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .movieman_wp {
-    background-image: url('../img/movieman_wp.JPG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                      url('../img/movieman_wp.JPG');
 }
