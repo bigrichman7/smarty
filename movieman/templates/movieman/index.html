@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css_additional %}
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link rel="stylesheet" href="{% static '/movieman/css/index.css' %}">
+{% endblock %}
+
+{% block title %}Игра "Киноман"{% endblock %}
+
+{% block content %}
+    <div class="container-app container-movieman">
+        <p class="description-app description-movieman">Описание игры</p>
+        <button class="start-button-app start-button-movieman">Начать игру</button>
+    </div>
+{% endblock %}

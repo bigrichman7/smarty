@@ -1,0 +1,16 @@
+.container-app {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.description-app {
+    font-size: 24px;
+}
+
+.start-button-app {
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
